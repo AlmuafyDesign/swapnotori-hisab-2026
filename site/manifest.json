@@ -1,1 +1,1 @@
-{"name":"ইসলামিক ব্যবসায়িক সমিতি — হিসাব","short_name":"সমিতির হিসাব","lang":"bn-BD","start_url":"/","scope":"/","display":"standalone","background_color":"#f4f7f5","theme_color":"#07513d","icons":[{"src":"/assets/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]}
+{"name":"ইসলামিক ব্যবসায়িক সমিতি — হিসাব","short_name":"সমিতির হিসাব","lang":"bn-BD","start_url":"./","scope":"./","display":"standalone","background_color":"#f4f7f5","theme_color":"#07513d","icons":[{"src":"./assets/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]}
