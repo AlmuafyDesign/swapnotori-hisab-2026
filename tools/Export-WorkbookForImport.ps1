@@ -23,7 +23,7 @@ try {
   $yearSheet=$book.Worksheets.Item('বার্ষিক চাঁদা')
   $settingsSheet=$book.Worksheets.Item('সেটিংস')
   $members=@(); $monthly=@(); $yearly=@()
-  $fiscalYear=CleanDigits([string](CellValue $settingsSheet 4 2))
+  $fiscalYear=CleanDigits([string](CellValue $settingsSheet 5 2))
   if(-not $fiscalYear) { $fiscalYear=CleanDigits([string]$monthSheet.Cells.Item(1,1).Text) -replace '^.*?(\d{4}[-–]\d{2}).*$','$1' }
   $monthNames=@('জুন','জুলাই','আগস্ট','সেপ্টেম্বর','অক্টোবর','নভেম্বর','ডিসেম্বর','জানুয়ারি','ফেব্রুয়ারি','মার্চ','এপ্রিল','মে')
   for($r=4;$r -le 28;$r++) {
