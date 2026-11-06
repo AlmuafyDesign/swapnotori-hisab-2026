@@ -12,7 +12,7 @@
 
 ## Sheets / Apps Script backend
 
-1. Google Sheet-এ Apps Script editor-ийг খুলে `gas/Code.gs` বসান।
+1. Google Sheet-এ Apps Script editor খুলে `gas/Code.gs` বসান।
 2. Apps Script **Project Settings → Script Properties**-এ `SPREADSHEET_ID` এবং একক `ADMIN_EMAIL` যোগ করুন।
 3. Google-এর authorization screen-এ প্রয়োজনীয় Sheets/Drive access নিজে পর্যালোচনা ও অনুমোদন করুন। `configureAdmin` চালিয়ে কমপক্ষে ১৪ অক্ষরের পাসওয়ার্ড নিজে সেট করুন; পাসওয়ার্ড চ্যাটে বা কোডে লিখবেন না।
 4. Web app deploy করে `Execute as: Me` এবং `Who has access: Anyone` বাছুন। Public endpoint-এ আর্থিক তথ্য প্রকাশ হয় না; প্রতিটি API অনুরোধে সার্ভার-সাইড administrator session যাচাই হয়।
