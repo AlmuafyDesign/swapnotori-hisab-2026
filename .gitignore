@@ -1,0 +1,9 @@
+.firebase/
+node_modules/
+private-import/
+*.xlsx
+*.xls
+*.csv
+.env*
+firebase-debug.log
+ui-debug.log

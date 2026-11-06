@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#07513d" />
+    <meta name="description" content="স্বপ্নতরী শেয়ার ভিত্তিক ব্যবসা প্রতিষ্ঠানের হিসাব ব্যবস্থাপনা" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" href="/assets/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>স্বপ্নতরী · হিসাব</title>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar">
+        <a class="brand" href="#dashboard" aria-label="ড্যাশবোর্ড">
+          <span class="brand-mark" aria-hidden="true">স</span>
+          <span class="brand-name">স্বপ্নতরী<br />শেয়ার ভিত্তিক ব্যবসা প্রতিষ্ঠান</span>
+        </a>
+        <nav class="main-nav" aria-label="প্রধান মেনু" id="main-nav"></nav>
+        <div class="sidebar-bottom">
+          <span class="connection-dot" id="connection-dot"></span>
+          <span id="connection-label">সংযোগ যাচাই হচ্ছে</span>
+        </div>
+      </aside>
+      <div class="scrim" id="scrim"></div>
+
+      <main class="main-area">
+        <header class="topbar">
+          <button class="icon-button menu-toggle" id="menu-toggle" aria-label="মেনু খুলুন">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" /></svg>
+          </button>
+          <div class="page-title-wrap">
+            <p class="eyebrow" id="financial-year">হিসাবের অর্থবছর</p>
+            <h1 id="page-title">ড্যাশবোর্ড</h1>
+          </div>
+          <div class="topbar-actions">
+            <span class="date-chip" id="today-date"></span>
+            <button class="user-chip" id="account-button" title="অ্যাকাউন্ট">
+              <span class="avatar">আ</span><span class="user-name">অ্যাডমিন</span>
+            </button>
+          </div>
+        </header>
+
+        <section id="view" class="view" aria-live="polite"></section>
+        <footer class="footer"><span>স্বপ্নতরী শেয়ার ভিত্তিক ব্যবসা প্রতিষ্ঠান</span><span>আমানত · স্বচ্ছতা · সহযোগিতা</span></footer>
+      </main>
+    </div>
+    <dialog id="login-dialog" class="modal">
+      <form id="login-form" class="modal-card" method="dialog">
+        <div class="brand-mark modal-mark">স</div>
+        <h2>নিরাপদ প্রবেশ</h2>
+        <p>শুধু অনুমোদিত প্রশাসক প্রবেশ করতে পারবেন।</p>
+        <label>প্রশাসকের Gmail<input name="email" type="email" autocomplete="username" required /></label>
+        <label>পাসওয়ার্ড<input name="password" type="password" autocomplete="current-password" required /></label>
+        <button class="primary-button" type="submit">প্রবেশ করুন</button>
+        <p class="form-message" id="login-message"></p>
+      </form>
+    </dialog>
+    <dialog id="record-dialog" class="modal record-modal">
+      <form id="record-form" class="modal-card" method="dialog">
+        <button class="modal-close icon-button" value="cancel" aria-label="বন্ধ করুন">×</button>
+        <h2 id="record-title">নতুন হিসাব</h2>
+        <div id="record-fields" class="form-grid"></div>
+        <div class="section-actions"><button class="quiet-button" value="cancel">বাতিল</button><button class="primary-button" type="submit">সংরক্ষণ করুন</button></div>
+        <p class="form-message" id="record-message"></p>
+      </form>
+    </dialog>
+    <div class="toast" id="toast" role="status"></div>
+    <script src="/config.js"></script>
+    <script src="/app.js" defer></script>
+    <script>if ('serviceWorker' in navigator) window.addEventListener('load', () => navigator.serviceWorker.register('/service-worker.js').catch(() => {}));</script>
+  </body>
+</html>
