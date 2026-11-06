@@ -7,7 +7,7 @@
 - Firebase Hosting-এ অ্যাপ প্রকাশিত আছে: https://swapnotori-hisab-2026.web.app
 - GitHub source repository: https://github.com/AlmuafyDesign/swapnotori-hisab-2026 (Private)
 - “আমাদের সম্পর্কে” পাতায় সংবিধান ও করজে হাসানা নীতিমালা আছে।
-- Google Apps Script web app যুক্ত হয়েছে এবং private Google Sheet-এ ১৪টি হিসাব লেজার তৈরি হয়েছে।
+- Google Apps Script web app URL সাইটে যুক্ত এবং private Google Sheet-এ ১৪টি হিসাব লেজার তৈরি হয়েছে। তবে লগইন যাচাইয়ের উত্তর frontend-এ ফেরার সমস্যা পাওয়া গেছে; Apps Script response forwarding fix এখনও live deployment-এ প্রকাশ হয়নি। আপডেট ও লগইন যাচাই না হওয়া পর্যন্ত আর্থিক ব্যবহার করবেন না।
 - পুরোনো workbook-এর হিসাব এখনো আমদানি করা হয়নি; import না হওয়া পর্যন্ত লাইভ সাইটে পুরোনো সদস্য বা লেনদেন দেখা যাবে না।
 - পুরোনো workbook-এর আমদানি ফাইল `private-import/`-এ স্থানীয়ভাবে রাখা আছে। `.gitignore`-এর কারণে এটি GitHub-এ নেই; Firebase Hosting-এও প্রকাশিত হয়নি।
 
